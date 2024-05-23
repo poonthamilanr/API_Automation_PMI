@@ -1,0 +1,86 @@
+﻿{
+  "ExperienceRequestBody": {
+    "workExperienceTypeEnum": "program",
+    "projectTitle": "PMP title",
+    "company": "PMI Org",
+    "jobTitle": "QA Engineer",
+    "primaryFocusTypeEnum": "aerospace",
+    "functionalAreaTypeEnum": "customerService",
+    "budgetRangeEnum": "UpToOneMillion",
+    "directReports": 2,
+    "pmReports": 2,
+    "startDate": "2019-03-01",
+    "endDate": "2019-09-30",
+    "description": "This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words. This is a long description of 100 words."
+  },
+  "ExperienceProjectRequestBody": {
+    "experienceId": 14114472,
+    "projectTitle": "Test Auto",
+    "startDate": "2020-01-27T15:54:36.354Z",
+    "endDate": "2020-01-27T15:54:36.354Z",
+    "projectRoleEnum": "projectContributor",
+    "contactRelationshipEnum": "applicant",
+    "contactPhoneCountryCode": "12345",
+    "TeamSizeEnum": "OneToFour",
+    "BudgetRangeEnum": "UpToOneMillion",
+    "MethodologyEnum": "Traditional"
+  },
+  "AddNewEducationRequestBody": {
+    "courseEndDate": "2018-12-31T12:24:41.414Z",
+    "courseStartDate": "2019-12-31T12:24:41.414Z",
+    "courseTitle": "Bachlors Degree",
+    "institution": "PEC",
+    "hoursTotal": 55
+  },
+  "AuditFailRequestBody": {
+    "suppressNotifications": true,
+    "parameters": {
+      "AuditFailureReason": "1"
+    }
+  },
+  "AuditResetRequestBody": {
+    "suppressNotifications": true,
+    "parameters": {
+      "AuditDueDate": "string"
+    }
+  },
+  "SubmitPaymentRequestBody": {
+    "suppressNotifications": true,
+    "parameters": {
+      "personId": 7093381,
+      "ExternalOrderID": 1254,
+      "ExternalOrderLineItemID": 3524,
+      "orderType": 1,
+      "credential": 1,
+      "sku": "6700020"
+    }
+  },
+  "SendAuditReferenceRequestBody": {
+    "auditDocumentId": 350737,
+    "referenceName": "Tester User",
+    "referenceEmail": "utester973@gmail.com",
+    "auditReferenceRequestStatus": 0,
+    "lastUpdateDate": "2023-01-05T12:54:54.805Z"
+  },
+  "BlobDocumentUploadRequestBody": {
+    "id": 8,
+    "documentContent": "c2FtcGxlIHRleHQ=",
+    "documentMetadata": {
+      "DocumentName": "sample.jpg",
+      "DocumentType": "jpg"
+    },
+    "auditDocumentTypeEnum": 1
+  },
+  "SpecialAccommodationRequestBody": {
+    "suppressNotifications": true,
+    "parameters": {
+      "ConditionsApproved": "1"
+    }
+  },
+  "EligibilityEndDateRequestBody": {
+    "suppressNotifications": true,
+    "parameters": {
+      "EligibilityEndDate": "string"
+    }
+  }
+}

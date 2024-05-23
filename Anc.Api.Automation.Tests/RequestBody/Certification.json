@@ -1,0 +1,156 @@
+﻿{
+  "Scheduled": {
+    "Accomodations": [],
+    "VendorAppointmentID": "419793352",
+    "VendorCandidateID": "7133947",
+    "CandidateID": "7133947E4",
+    "Code": "PMI",
+    "EventType": "ApptCreated",
+    "EventTime": "2022-12-21T05:47:03.153Z",
+    "AppointmentStartDateTime": "2023-12-25T01:30:00Z",
+    "FirstName": null,
+    "MiddleName": null,
+    "LastName": null,
+    "TestingCenter": {
+      "Identifier": "57937",
+      "Name": "IPMAC Information Technology Joint Stock Company"
+    },
+    "Exam": { "Definition": { "DeliveryMethod": "standardTestCenterDelivery" } }
+  },
+  "ReScheduled": {
+    "Accomodations": [],
+    "VendorAppointmentID": "419793352",
+    "VendorCandidateID": "7133947",
+    "CandidateID": "7133947E4",
+    "Code": "PMI",
+    "EventType": "ApptRescheduled",
+    "EventTime": "2022-12-21T05:47:03.153Z",
+    "AppointmentStartDateTime": "2022-12-20T01:30:00Z",
+    "FirstName": null,
+    "MiddleName": null,
+    "LastName": null,
+    "TestingCenter": {
+      "Identifier": "57937",
+      "Name": "IPMAC Information Technology Joint Stock Company"
+    },
+    "Exam": { "Definition": { "DeliveryMethod": "standardTestCenterDelivery" } }
+  },
+  "NewCCRCycle": {
+    "id": 0,
+    "certificationId": 2747226,
+    "effectiveStartDate": "2026-02-07T07:10:08.765Z",
+    "effectiveEndDate": "2029-02-06T07:10:08.766Z",
+    "originalStartDate": "2023-02-07T07:10:08.766Z",
+    "originalEndDate": "2026-02-06T07:10:08.766Z",
+    "totalPDUsRequired": 0,
+    "exemptFlag": false
+  },
+  "SBNewCertification": {
+    "personId": 6966965,
+    "certificationType": "PMP"
+  },
+  "SBCourseCompleted": {
+    "personId": 6966965,
+    "courseId": "string"
+  },
+  "SBApplicationETPAndPR": {
+    "id": 0,
+    "personId": 0,
+    "certificationTypeEnum": 1,
+    "applicationStatusEnum": 0,
+    "dateStartEffectiveEligibility": "2023-03-13T14:16:40.435Z",
+    "dateEndEffectiveEligibility": "2023-03-13T14:16:40.435Z",
+    "closeReason": "string",
+    "examVendorCountry": "string"
+  },
+  "SBExamDetailsCompletedAndAccomm": {
+    "examId": 5058290,
+    "currentDate": "2023-03-13T14:40:26.228Z"
+  },
+  "SBEligibilityExpired": {
+    "examId": 5058290
+  },
+  "SBExamPurchased": {
+    "examId": 5058290,
+    "dateEndEffectiveEligibility": "2023-03-13T14:40:46.630Z"
+  },
+  "SBExamScheduled": {
+    "examId": 5058290,
+    "isRescheduled": true
+  },
+  "SBExamTaken": {
+    "examId": 5013134,
+    "certificationId": 2745719
+  },
+  "ExtEligibilityForNonAppBased": {
+    "dateEndEffectiveEligibility": "2023-09-25T11:14:04.068Z"
+  },
+  "LmsCourseCompletion": {
+    "courseId": "EL002",
+    "courseTitle": "LMS QA Course Test",
+    "institution": "PMI QA Test Institute",
+    "courseEndDate": "2022-03-20T15:00:00",
+    "courseStartDate": "2022-03-25T07:00:00",
+    "hoursTotal": 1
+  },
+  "QueueExamProcessingResult": {
+    "examProcessingResultIds": [ 2 ],
+    "adminPersonId": 2912259,
+    "queueParameters": {
+      "queueMode": "Reprocess",
+      "alternateEligibilityId": null,
+      "alternateExamFormCode": null
+    }
+  },
+  "DequeueExamProcessiongResult": {
+    "examProcessingResultIds": [ 2 ],
+    "adminPersonId": 2912259
+  },
+  "ProcessOrderPayment": {
+    "personId": 7203658,
+    "externalOrderId": 0,
+    "externalOrderLineItemId": 0,
+    "orderType": 1,
+    "credential": 5,
+    "sku": "6700038"
+  },
+  "PostEmailRequestBody": {
+    "PersonId": 7389554,
+    "UserName": null,
+    "From": null,
+    "To": null,
+    "Bcc": null,
+    "CC": null,
+    "Subject": null,
+    "HtmlContent": null,
+    "TemplateId": "APP_SUBMIT_PAYMENT_SCHEDULE_EXAM",
+    "Country": null,
+    "TokenObjectIds": {
+      "APPLICATION_ID": "5075804",
+      "EXAM_ID": "5058355",
+      "CERTIFICATION_TYPE_ID": "PMP"
+    },
+    "ExtendedAttributes": {
+      "ApplicationID": "5075804"
+    },
+    "ContactHistoryType": null,
+    "PreferredAddressId": null,
+    "SkipLocalization": false
+  },
+  "ProcesssBatch": [ 10 ],
+  "CandidateUpload": [
+    {
+      "courseTitle": "DAVSC",
+      "institution": "PMI",
+      "courseEndDate": "2023-05-02T14:54:00.091Z",
+      "courseStartDate": "2023-05-02T14:54:00.091Z",
+      "hoursTotal": 5,
+      "courseId": "ATPDAVSC1SE",
+      "pmiId": 7305163,
+      "firstName": "Rosie",
+      "lastName": "Wintheiser",
+      "credential": "13",
+      "examStatus": "Eligible"
+    }
+  ]
+}

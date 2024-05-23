@@ -1,0 +1,52 @@
+#########################################################
+# Author: Dayananda Marthala                            #
+# Purpose: CI Build Pipeline for Cert API Automation    #
+#########################################################
+
+ 
+trigger:
+- develop
+
+pool:
+    name: pmionprem
+
+    demands:
+      - msbuild
+      - visualstudio
+
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+variables:
+  solution: '**/*.sln'
+  buildConfiguration: 'Release'
+
+stages:
+- stage: BuildJob
+  displayName: Build Cert API Automation 
+  
+  jobs:  
+  
+  - job: BuildJob
+    displayName: Build and Publish Cert API Automation
+
+    steps:  
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: 'restore'
+        restoreSolution: '$(Solution)'
+        feedsToUse: 'select'
+        vstsFeed: 'c04793e4-b1c4-46e4-a447-d6e3cfbd32a3/60ff6f55-75b4-4649-ade7-07e5a04ac6aa'
+        
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        solution: '**/Anc.Api.Automation.Tests.csproj'
+        command: 'build'
+        projects: '$(solution)'
+        arguments: '--configuration $(buildConfiguration) --output $(build.artifactstagingdirectory)'
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact: drop'
+      condition: succeededOrFailed()

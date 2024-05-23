@@ -1,0 +1,218 @@
+{
+  "resources": [
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceCountRule",
+      "name": "Experience Count Rule",
+      "description": "Flags applications that do not meet a minimum experience count.",
+      "settings": "{ \"minCount\": 2 }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/1",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceDescSameAppRule",
+      "name": "Experience Description (Same Application) Rule",
+      "description": "Flags applications with similar experience descriptions within the same application.",
+      "settings": "{ \"pctMatch\": 90 }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/2",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceDescKeywordLookUpRule",
+      "name": "Experience Description (Keyword Look-Up) Rule",
+      "description": "Flags applications with experience descriptions that contain keywords.",
+      "settings": "{ \"keyWords\": [\"INTERN\",\"COLLEGE\",\"GIRL SCOUT\",\"OUTING\",\"SCHOOL\",\"TEACHING\",\"7127318\",\"DECK\",\"INTERNSHIP\",\"PMP\",\"STUDENT\",\"VACATION\",\"BASEMENT\",\"FAMILY\",\"LITTLE LEAGUE\",\"REMODELING\",\"STUDENTS\",\"VOLUNTEER\",\"BOY SCOUT\",\"FRATERNITY\",\"NULL\",\"RENOVATION\",\"TEACHER\",\"WEDDING\",\"CHURCH\",\"FUNDRAISING\"] }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/3",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceOverlapRule",
+      "name": "Experience Overlap Rule",
+      "description": "Flags applications that have overlapping experience from the complete set of candidate's experience (where experience Job Title and Company are not the same).",
+      "settings": "{ \"maxMonthOverlap\": 1 }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/4",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "BlacklistedInstitutionsRule",
+      "name": "Blacklisted Institutions Rule",
+      "description": "Flags applications that have education from blacklisted institutions.",
+      "settings": "{ \"pctMatch\": 85, \"institutions\": [\"PM Tricks\",\"CertWizard\",\"CertGalaxy\",\"Chinese Dumps\",\"SPOTO\",\"Certification Forest\",\"Blue Morpho Learning\",\"Berry Infotech\"] }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/5",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "BlacklistedCoursesRule",
+      "name": "Blacklisted Courses Rule",
+      "description": "Flags applications that have education from blacklisted courses.",
+      "settings": "{ \"pctMatch\": 85, \"courses\": [\"PMP\",\"PMP Training\",\"PMP Training Course\",\"PMP Preparation Course\",\"PMP Certification\",\"PMP COURSE\",\"PMP Exam Prep\",\"Project Management Training\",\"Project Management Professional (PMP)\",\"UDEMY\",\"PMP Project Management Professional Training\"] }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/6",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": null,
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceDescOtherAppRule",
+      "name": "Experience Description (Other Applications) Rule",
+      "description": "Flags applications that have similar experience descriptions with other applications having similar professional educational institutions.",
+      "settings": "{ \"pctMatch\": 90, \"InstitutionPctMatch\": 85, \"monthsBack\": 12, \"maxTake\": 200 }",
+      "isActive": true,
+      "systemCreateDate": "2022-06-09T05:38:02.363",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/7",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": [
+        "PgMP",
+        "CAPM"
+      ],
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceCountRule",
+      "name": "Test",
+      "description": "test test test tes test",
+      "settings": "{\"MinCount\":1}",
+      "isActive": true,
+      "systemCreateDate": "2023-01-19T07:33:14.627",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/15",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": [
+        "PgMP",
+        "CAPM"
+      ],
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceCountRule",
+      "name": "Test",
+      "description": "test test test test test",
+      "settings": "{\"MinCount\":1}",
+      "isActive": true,
+      "systemCreateDate": "2023-01-19T07:33:35.457",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/16",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    },
+    {
+      "certificationTypes": [
+        "PMP"
+      ],
+      "applicationReviewActionEnum": "None",
+      "applicationReviewRuleTypeEnum": "ExperienceCountRule",
+      "name": "This is my Variation Name",
+      "description": "This rule is going to find cheaters with settings of Min count is less than 2 for PMP only.",
+      "settings": "{\"minCount\":2}",
+      "isActive": true,
+      "systemCreateDate": "2023-02-09T10:46:14.057",
+      "_links": {
+        "self": {
+          "href": "/api/ApplicationReview/rules/19",
+          "allowed": [
+            "Get",
+            "Put",
+            "Delete"
+          ]
+        }
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/ApplicationReview/rules",
+      "allowed": null
+    }
+  }
+}
